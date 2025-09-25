@@ -84,7 +84,7 @@ cout << "sum is "<<sum << endl;
     cout<<"("<<number1<<"*"<<number1<<")"<<"="<<sum<<endl;
 
 
-*/
+
     //problem10
     int num1,maxnum1;
     cout << "please enter integers ,(if you want to stop and to know max number among your enterd numbers ,you should 0):";
@@ -101,8 +101,20 @@ cout << "sum is "<<sum << endl;
    cout << "your max number is " << maxnum1<<endl;
 
 
-
-
+*/
+    //problem 11
+    int son;
+    cout<< "enter an intereg , the input ends if it is 0:";
+    cin >> son;
+    int numplus=0;
+    int numminus=0;
+    while (son != 0) {
+        if (son>0){numplus++ ;}
+        else if (son<0){numminus++ ;}
+        cout<< "enter number: ";
+        cin >> son;
+    }
+   cout << "positive numbers "<<numplus << " "<< "negative numbers "<<numminus<<   endl;
 
 
 
