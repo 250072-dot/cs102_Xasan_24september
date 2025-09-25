@@ -58,7 +58,7 @@ cout << "sum is "<<sum << endl;
     int deadline = pow(number, 1./2);
     for (int i = 1; i <= deadline; i++) {if (number % i == 0) {factors = factors + 1;} }
     if (factors ==1) {cout << number << " is a prime number" << endl;}
-    else {cout << number << " is not a prime number" << endl; }     */
+    else {cout << number << " is not a prime number" << endl; }
 
     //problem 8
     int numb;
@@ -69,6 +69,41 @@ cout << "sum is "<<sum << endl;
         cout << lastnum;
         numb=numb/10;
     }
+
+    //problem 9
+    int number1;
+    cout << "enter your n :";
+    cin>>number1;
+    for (int i=1 ; i<=number1; i++){cout <<i<<"*"<<i<<"="<<i*i<<endl;}
+
+    int sum = (number1*(number1+1)*(2*number1+1)/6);
+    for (int i=1 ; i<=number1-1; i++) {
+
+        cout << "("<<i<<"*"<<i<<")"<<"+";
+    }
+    cout<<"("<<number1<<"*"<<number1<<")"<<"="<<sum<<endl;
+
+
+*/
+    //problem10
+    int num1,maxnum1;
+    cout << "please enter integers ,(if you want to stop and to know max number among your enterd numbers ,you should 0):";
+    cin >> num1 ;
+    maxnum1 = num1;
+
+    while (num1 != 0) {
+        cout << "please enter integers :";
+        cin >> num1 ;
+        if (num1 > maxnum1) {maxnum1 = num1;}
+
+
+    }
+   cout << "your max number is " << maxnum1<<endl;
+
+
+
+
+
 
 
 return 0;}
