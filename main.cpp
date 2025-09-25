@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-/*
+
 //problem 1
 int sum=0;
 for (int i = 1; i<=10; i=i+1) {
@@ -101,21 +101,52 @@ cout << "sum is "<<sum << endl;
    cout << "your max number is " << maxnum1<<endl;
 
 
-*/
+
     //problem 11
     int son;
     cout<< "enter an intereg , the input ends if it is 0:";
     cin >> son;
     int numplus=0;
     int numminus=0;
+    float total1 = 0;
+    float mean1 = 0;
     while (son != 0) {
+        total1+=son;
         if (son>0){numplus++ ;}
         else if (son<0){numminus++ ;}
         cout<< "enter number: ";
         cin >> son;
     }
+    mean1 = total1/(numminus+numplus);
    cout << "positive numbers "<<numplus << " "<< "negative numbers "<<numminus<<   endl;
+   cout << "the total is "<<total1<<endl;
+    cout << "the average is "<<mean1 <<endl;
+
+    //problem 12
+    char star='*';
+    int side;
+    cout << "enter a side of square :";
+    cin >> side;
+    for (int i = 1; i <= side*side; i++) {
+        if (i % side==1) {cout <<'\n';}
+        cout <<star;
+    }
 
 
+    //problem 13
+
+     char st = '*';
+    int tomon;
+    cout << "enter lenght of side :";
+    cin>>tomon;
+
+    for (int i = 1; i <= tomon; i++) {
+        for ( int k = 1 ; k <= i ; k++){cout << st;}
+        cout << endl;
+    }
+
+
+
+    //problem 14
 
 return 0;}
