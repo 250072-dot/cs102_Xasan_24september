@@ -1,8 +1,11 @@
 #include <iostream>
+#include <cmath>
+
 using namespace std;
 
 int main() {
 
+/*
 //problem 1
 int sum=0;
 for (int i = 1; i<=10; i=i+1) {
@@ -76,12 +79,12 @@ cout << "sum is "<<sum << endl;
     cin>>number1;
     for (int i=1 ; i<=number1; i++){cout <<i<<"*"<<i<<"="<<i*i<<endl;}
 
-    int sum = (number1*(number1+1)*(2*number1+1)/6);
+    int sum23 = (number1*(number1+1)*(2*number1+1)/6);
     for (int i=1 ; i<=number1-1; i++) {
 
         cout << "("<<i<<"*"<<i<<")"<<"+";
     }
-    cout<<"("<<number1<<"*"<<number1<<")"<<"="<<sum<<endl;
+    cout<<"("<<number1<<"*"<<number1<<")"<<"="<<sum23<<endl;
 
 
 
@@ -148,5 +151,89 @@ cout << "sum is "<<sum << endl;
 
 
     //problem 14
+    cout << " enter depth:";
+    int depth;
+    cin >> depth;
+    if (depth <=0) {cout << "depth is incorrect" << endl;}
+    else {
+        for (int i = 1; i <= depth; i++) {
+            for (int j=1; j<=i; j++) {cout <<i;}
+            cout << endl;
+        }
+    }
 
+    //problem 15
+
+    int denomen;
+    double suminvers=0;
+    cout << "please enter a positive number: ";
+    cin >> denomen;
+    if (denomen <= 0){cout <<"please enter a positive"<< endl;}
+    else {
+
+        for (int i=1; i<=denomen; i++) {
+            suminvers+=(1./i);
+            if (i != denomen) {
+                cout << 1 <<"/"<<i <<" + ";
+            }
+            else {cout << 1 <<"/"<<i;}
+        }
+        cout << "= " << suminvers << endl;
+    }
+
+
+    //problem 16
+
+    float rent = 1000;
+    double all_rent=0 ;
+    for (int i = 1;i <= 5; i++) {
+        cout << "For "<<i<<"th year, rent is "<<rent*(pow(1.03,i-1))<< "$"<<endl;
+        all_rent = all_rent + rent*(pow(1.03,i-1));
+    }
+    cout << "Overall "<<all_rent <<"$"<< endl;
+
+
+    //problem 17
+
+    int sonk,form = 0;
+    cout << "enter your number :";
+    cin >> sonk;
+    while (sonk > 0) {
+        form += sonk % 10;
+        sonk = sonk / 10;
+    }
+    cout << form << endl;
+
+
+    //problem 18
+
+    int binery;
+    cout << "please enter a binary number : ";
+    cin >> binery;
+    int desim = 0;
+    int count23 = 0;
+    while (binery>0) {
+        desim = desim + pow(2,count23)*(binery % 2);
+        binery /=10;
+        count23++;
+    }
+    cout << "The number's decimal is "<< desim << endl;
+
+    //problem 19
+
+    int facnum;
+    cout << "Please enter a number: ";
+    cin >> facnum;
+
+    int factors = 2;
+    while (facnum > 1) {
+        while (facnum % factors == 0) {
+            cout << factors << " ";
+            facnum /= factors;
+        }
+        factors++;
+    }
+
+    */
+    //problem 20
 return 0;}
