@@ -234,6 +234,18 @@ cout << "sum is "<<sum << endl;
         factors++;
     }
 
-    */
+
     //problem 20
+    double yig = 0;
+     for (int i = 1; i <= 10; i++) {
+         for ( int j = 1; j <= 10000*i ;j++) {
+             yig = yig + (pow((-1),(j+1))/(2*j-1));
+         }
+         cout << yig << endl;
+     }
+*/
+
+    //problem 21
+
+
 return 0;}
